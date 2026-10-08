@@ -426,3 +426,19 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# --- NFL helmet-impact pipeline ---
+# Data and outputs are never committed; .gitkeep files keep the folder layout.
+data/**
+!data/**/
+!data/**/.gitkeep
+outputs/**
+!outputs/.gitkeep
+# Model weights and video
+*.pt
+*.pth
+*.onnx
+*.mp4
+# Secrets and caches
+.env
+__pycache__/

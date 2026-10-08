@@ -1,0 +1,8 @@
+# Which registered model fills each pipeline slot.
+# Names must match an @register("name") in src/models/. Models are not chosen yet.
+detector:
+  name: TBD
+  weights_path: TBD
+impact_classifier:
+  name: TBD
+  weights_path: TBD
