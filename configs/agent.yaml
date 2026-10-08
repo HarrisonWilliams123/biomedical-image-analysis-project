@@ -1,0 +1,8 @@
+# AI review agent settings.
+# Candidates with route_low <= prob < route_high are sent to the agent;
+# below route_low is auto-rejected, at or above route_high is auto-accepted.
+route_low: 0.30
+route_high: 0.70
+max_turns: 6
+model: claude-haiku-5-5   # overridden by REVIEW_AGENT_MODEL if set
+log_path: outputs/agent_log.jsonl
